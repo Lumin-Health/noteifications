@@ -1,0 +1,20 @@
+{
+  "treatment_episode_payload": {
+    "objectId": "123456789",
+    "objectType": "2-56205176",
+    "objectname": "Test Treatment Episode",
+    "objecttypename": "Treatment Episode",
+    "noteId": 987654321,
+    "authorUserId": "1001",
+    "authorname": "Test Author"
+  },
+  "insurance_authorization_payload": {
+    "objectId": "987654321",
+    "objectType": "2-56205178",
+    "objectname": "Test Insurance Authorization",
+    "objecttypename": "Insurance Authorization",
+    "noteId": 123456789,
+    "authorUserId": "1002",
+    "authorname": "Test Author"
+  }
+}

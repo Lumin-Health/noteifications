@@ -23,7 +23,7 @@ class HubSpotClient:
             # Using 'hubspot_owner_id' for the note usually represents the assignee, 
             # but 'hs_created_by_user_id' is the actual author.
             properties = ["hs_created_by_user_id", "hubspot_owner_id", "hs_note_body"]
-            associations = ["contacts", "companies", "deals", "2-54812380", "2-54811911"] # Add custom object types if known ID
+            associations = ["contacts", "companies", "deals", "2-56205176", "2-56205178"] # Production Custom Objects (Episodes, Auths)
             
             # Using generic object retrieval for Note (object type 'notes' or '0-4')
             response = self.client.crm.objects.notes.basic_api.get_by_id(

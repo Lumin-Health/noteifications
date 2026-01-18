@@ -69,20 +69,20 @@ def handle_webhook(request):
                  target_object_id = associations["contacts"].results[0].id
                  target_object_type = "contacts"
             # Check Treatment Episodes
-            # The key is dynamic e.g. 'p50831618_treatment_episodes'
-            elif associations.get("p50831618_treatment_episodes"):
-                 target_object_id = associations["p50831618_treatment_episodes"].results[0].id
-                 target_object_type = "2-54812380"
-            elif associations.get("2-54812380"):
-                 target_object_id = associations["2-54812380"].results[0].id
-                 target_object_type = "2-54812380"
+            # The key is dynamic e.g. 'p46446185_treatment_episodes'
+            elif associations.get("p46446185_treatment_episodes"):
+                 target_object_id = associations["p46446185_treatment_episodes"].results[0].id
+                 target_object_type = "2-56205176"
+            elif associations.get("2-56205176"):
+                 target_object_id = associations["2-56205176"].results[0].id
+                 target_object_type = "2-56205176"
             # Check Insurance Authorizations
-            elif associations.get("p50831618_insurance_authorizations"):
-                 target_object_id = associations["p50831618_insurance_authorizations"].results[0].id
-                 target_object_type = "2-54811911"
-            elif associations.get("2-54811911"):
-                 target_object_id = associations["2-54811911"].results[0].id
-                 target_object_type = "2-54811911"
+            elif associations.get("p46446185_insurance_authorizations"):
+                 target_object_id = associations["p46446185_insurance_authorizations"].results[0].id
+                 target_object_type = "2-56205178"
+            elif associations.get("2-56205178"):
+                 target_object_id = associations["2-56205178"].results[0].id
+                 target_object_type = "2-56205178"
             
             if not target_object_id:
                 logger.warning(f"Note {note_id} has no associated contact/object. Skipping.")
@@ -112,10 +112,10 @@ def handle_webhook(request):
             if should_trigger:
                 # Select correct Webhook URL
                 webhook_url = None
-                if target_object_type == "2-54811911": # Insurance Authorization
+                if target_object_type == "2-56205178": # Insurance Authorization
                     from config import WORKFLOW_WEBHOOK_URL_AUTH
                     webhook_url = WORKFLOW_WEBHOOK_URL_AUTH
-                elif target_object_type == "2-54812380": # Treatment Episode
+                elif target_object_type == "2-56205176": # Treatment Episode
                     from config import WORKFLOW_WEBHOOK_URL_EPISODE
                     webhook_url = WORKFLOW_WEBHOOK_URL_EPISODE
                 else:
@@ -152,9 +152,9 @@ def handle_webhook(request):
                         object_type_name = "Company"
                     elif target_object_type == "deals" or target_object_type == "0-3":
                          object_type_name = "Deal"
-                    elif target_object_type == "2-54812380":
+                    elif target_object_type == "2-56205176":
                          object_type_name = "Treatment Episode"
-                    elif target_object_type == "2-54811911":
+                    elif target_object_type == "2-56205178":
                          object_type_name = "Insurance Authorization"
                     
                     # Construct payload for the webhook

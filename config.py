@@ -20,12 +20,12 @@ def get_secret(secret_name, project_id):
 
 # Configuration
 PROJECT_ID = os.environ.get("GCP_PROJECT", "lumininternal")
-HUBSPOT_SECRET_NAME = os.environ.get("HUBSPOT_SECRET_NAME", "hubspot-new-standard-sandbox-token")
+HUBSPOT_SECRET_NAME = os.environ.get("HUBSPOT_SECRET_NAME", "Lumin-OS-Hubspot-API")
 # Default URLs (can be overridden by environment variables)
 # Auth Workflow (2-54811911)
-WORKFLOW_WEBHOOK_URL_AUTH = os.environ.get("WORKFLOW_WEBHOOK_URL", "https://api-na1.hubapi.com/automation/v4/webhook-triggers/50831618/j6EloSG")
-# Treatment Episode Workflow (2-54812380)
-WORKFLOW_WEBHOOK_URL_EPISODE = os.environ.get("WORKFLOW_WEBHOOK_URL_EPISODE", "https://api-na1.hubapi.com/automation/v4/webhook-triggers/50831618/n3bB66h")
+WORKFLOW_WEBHOOK_URL_AUTH = os.environ.get("WORKFLOW_WEBHOOK_URL", "https://api-na1.hubapi.com/automation/v4/webhook-triggers/46446185/IpzWelp")
+# Treatment Episode Workflow (2-56205176)
+WORKFLOW_WEBHOOK_URL_EPISODE = os.environ.get("WORKFLOW_WEBHOOK_URL_EPISODE", "TO_BE_UPDATED_PROD_EPISODE_WEBHOOK_URL")
 
 def get_hubspot_access_token():
     """

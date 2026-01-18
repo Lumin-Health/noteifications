@@ -6,11 +6,11 @@ REGION="us-central1"
 FUNCTION_NAME="hubspot-note-notifier"
 ENTRY_POINT="handle_webhook"
 RUNTIME="python310"
-SECRET_NAME="hubspot-new-standard-sandbox-token"
+SECRET_NAME="Lumin-OS-Hubspot-API"
 # Auth Workflow
-WORKFLOW_WEBHOOK_URL="https://api-na1.hubapi.com/automation/v4/webhook-triggers/50831618/j6EloSG"
+WORKFLOW_WEBHOOK_URL="https://api-na1.hubapi.com/automation/v4/webhook-triggers/46446185/IpzWelp"
 # Treatment Episode Workflow
-WORKFLOW_WEBHOOK_URL_EPISODE="https://api-na1.hubapi.com/automation/v4/webhook-triggers/50831618/n3bB66h"
+WORKFLOW_WEBHOOK_URL_EPISODE="TO_BE_UPDATED_PROD_EPISODE_WEBHOOK_URL"
 
 if [ -z "$WORKFLOW_WEBHOOK_URL" ]; then
   echo "WARNING: WORKFLOW_WEBHOOK_URL is not set."
