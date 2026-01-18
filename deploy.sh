@@ -10,7 +10,7 @@ SECRET_NAME="Lumin-OS-Hubspot-API"
 # Auth Workflow
 WORKFLOW_WEBHOOK_URL="https://api-na1.hubapi.com/automation/v4/webhook-triggers/46446185/BfJsN4l"
 # Treatment Episode Workflow
-WORKFLOW_WEBHOOK_URL_EPISODE="TO_BE_UPDATED_PROD_EPISODE_WEBHOOK_URL"
+WORKFLOW_WEBHOOK_URL_EPISODE="https://api-na1.hubapi.com/automation/v4/webhook-triggers/46446185/TrAycxB"
 
 if [ -z "$WORKFLOW_WEBHOOK_URL" ]; then
   echo "WARNING: WORKFLOW_WEBHOOK_URL is not set."

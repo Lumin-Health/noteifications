@@ -25,7 +25,7 @@ HUBSPOT_SECRET_NAME = os.environ.get("HUBSPOT_SECRET_NAME", "Lumin-OS-Hubspot-AP
 # Auth Workflow (2-54811911)
 WORKFLOW_WEBHOOK_URL_AUTH = os.environ.get("WORKFLOW_WEBHOOK_URL", "https://api-na1.hubapi.com/automation/v4/webhook-triggers/46446185/BfJsN4l")
 # Treatment Episode Workflow (2-56205176)
-WORKFLOW_WEBHOOK_URL_EPISODE = os.environ.get("WORKFLOW_WEBHOOK_URL_EPISODE", "TO_BE_UPDATED_PROD_EPISODE_WEBHOOK_URL")
+WORKFLOW_WEBHOOK_URL_EPISODE = os.environ.get("WORKFLOW_WEBHOOK_URL_EPISODE", "https://api-na1.hubapi.com/automation/v4/webhook-triggers/46446185/TrAycxB")
 
 def get_hubspot_access_token():
     """
