@@ -160,6 +160,7 @@ def handle_webhook(request):
                     # Construct payload for the webhook
                     trigger_payload = {
                         "objectId": target_object_id,
+                        "recordId": target_object_id,
                         "objectType": target_object_type,
                         "objectname": object_name,
                         "objecttypename": object_type_name,
